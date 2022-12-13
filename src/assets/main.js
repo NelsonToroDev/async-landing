@@ -1,11 +1,12 @@
-import config from "../../config";
-const API = config.app.API;
+//import config from './config';
+//const config = require('../../config');
+const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCXqlds5f7B2OOs9vQuevl4A&part=snippet%2Cid&order=date&maxResults=9';
 const content = null ||  document.getElementById('content');
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': config.app.XRapidAPIKey,//'706e763c7dmsh8adff5a7ea6da2dp1d6ac9jsn431a941ef7cf',
-		'X-RapidAPI-Host': config.app.XRapidAPIKey//'youtube-v31.p.rapidapi.com'
+		'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com',
+    'X-RapidAPI-Key': 'topsecret'
 	}
 };
 
